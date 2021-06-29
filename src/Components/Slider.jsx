@@ -12,14 +12,13 @@ import s6 from "../img/s6.jpg";
 import s7 from "../img/s7.jpg";
 import s8 from "../img/s8.jpg";
 
-import './CSS/Slider.scss'
+import "./CSS/Slider.scss";
 
-const Item = ({item}) => {
+const Item = ({ item }) => {
   return (
     <Paper className="slider_box">
       <img src={item.img} alt="ERROR" id="img" />
       {/* <p>{props.item.description}</p> */}
-
     </Paper>
   );
 };
@@ -63,7 +62,11 @@ const Slider = () => {
   return (
     <>
       <div className="slider_container">
-        <Carousel>
+        <Carousel className="car"
+          indicators={false}
+          navButtonsAlwaysVisible
+          
+        >
           {items.map((item, i) => (
             <Item key={i} item={item} />
           ))}

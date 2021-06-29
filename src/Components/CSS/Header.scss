@@ -1,5 +1,5 @@
 .header_container {
-  border: 2px solid black;
+  border: 2px solid white;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -38,7 +38,8 @@
       color: black;
 
       &:hover {
-        color: red;
+        color: #00756c;
+        text-shadow: 1px 1px 5px #00756b6b;
       }
     }
     .space {
