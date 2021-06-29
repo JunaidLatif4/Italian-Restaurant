@@ -9,32 +9,40 @@
     border-bottom: 2px solid red;
     padding: 1rem 0;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
 
     .book {
     }
 
     .title {
+      font-family: "Lato", sans-serif;
       text-align: center;
       font-size: xx-large;
+      width: 50rem;
     }
   }
 
-  .nav{
-      display: grid;
-      grid-template-columns: repeat(9 , 1fr);
-      font-size: x-large;
-      text-align: center;
-      align-items: center;
-      justify-content: center;
-      margin: 1rem;
+  .nav {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    font-size: x-large;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
 
-    .navlink{
-        margin: 0 1rem;
-        text-decoration: none;
+    .navlink {
+      padding: 0 1rem;
+      text-decoration: none;
+      color: black;
+
+      &:hover {
+        color: red;
+      }
     }
-    .space{
-        font-weight: bold;
+    .space {
+      font-weight: bold;
     }
   }
 }

@@ -2,14 +2,15 @@ import React from 'react'
 import {NavLink} from 'react-router-dom'
 
 import { Button } from '@material-ui/core'
+import LocationOnIcon from '@material-ui/icons/LocationOn';
 import { makeStyles } from '@material-ui/core/styles'
 
+import Title from '../img/title.svg'
 import './CSS/Header.scss'
 
 const Style = makeStyles({
     btn: {
-        backgroundColor: "red",
-        margin:"0 1rem"
+        backgroundColor: "#00756c",
     }
 })
 
@@ -22,27 +23,28 @@ const Header = () => {
                     <Button
                         variant='contained'
                         className={classes.btn}
+                        startIcon={<LocationOnIcon/>}
                     >
-                        HELLOW
+                        Locate
                     </Button>
                     <Button
                         variant='contained'
                         className={classes.btn}
                     >
-                        BOOK
+                        BOOK NOW
                     </Button>
                 </div>
                 <div className="title">
-                24 Hours Italian Restaurant 
+                <img src={Title} alt="ERROR" /> 
                 </div>
             </div>
 
             <nav className="nav">
                 <NavLink to="/" className="navlink"> Home </NavLink> <div className="space">|</div>
+                <NavLink to="/" className="navlink"> Menus </NavLink> <div className="space">|</div>
                 <NavLink to="/" className="navlink"> Home </NavLink> <div className="space">|</div>
-                <NavLink to="/" className="navlink"> Home </NavLink> <div className="space">|</div>
-                <NavLink to="/" className="navlink"> Home </NavLink> <div className="space">|</div>
-                <NavLink to="/" className="navlink"> Home </NavLink>
+                <NavLink to="/" className="navlink"> About Us </NavLink> <div className="space">|</div>
+                <NavLink to="/" className="navlink"> Contact Us </NavLink>
             </nav>
 
         </div>
