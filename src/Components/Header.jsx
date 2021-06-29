@@ -11,6 +11,10 @@ import './CSS/Header.scss'
 const Style = makeStyles({
     btn: {
         backgroundColor: "#00756c",
+        fontWeight:"bold",
+        color:"white",
+        margin:"0 .5rem",
+        fontSize:"large"
     }
 })
 
