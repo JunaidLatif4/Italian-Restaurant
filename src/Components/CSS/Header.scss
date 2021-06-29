@@ -1,3 +1,40 @@
-.header_container{
-    display: flex;
+.header_container {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .header_intro {
+    border-bottom: 2px solid red;
+    padding: 1rem 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    .book {
+    }
+
+    .title {
+      text-align: center;
+      font-size: xx-large;
+    }
+  }
+
+  .nav{
+      display: grid;
+      grid-template-columns: repeat(9 , 1fr);
+      font-size: x-large;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      margin: 1rem;
+
+    .navlink{
+        margin: 0 1rem;
+        text-decoration: none;
+    }
+    .space{
+        font-weight: bold;
+    }
+  }
 }
