@@ -29,7 +29,7 @@ const Header = () => {
                         className={classes.btn}
                         startIcon={<LocationOnIcon/>}
                     >
-                        Locate
+                        Locate US
                     </Button>
                     <Button
                         variant='contained'
@@ -47,7 +47,7 @@ const Header = () => {
                 <NavLink to="/" className="navlink"> Home </NavLink> <div className="space">|</div>
                 <NavLink to="/" className="navlink"> Menus </NavLink> <div className="space">|</div>
                 <NavLink to="/" className="navlink"> Home </NavLink> <div className="space">|</div>
-                <NavLink to="/" className="navlink"> About Us </NavLink> <div className="space">|</div>
+                <NavLink to="about" className="navlink"> About Us </NavLink> <div className="space">|</div>
                 <NavLink to="/" className="navlink"> Contact Us </NavLink>
             </nav>
 

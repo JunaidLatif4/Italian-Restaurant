@@ -1,5 +1,5 @@
 .header_container {
-  border: 2px solid white;
+  border-bottom: 2px solid black;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,7 +16,6 @@
     }
 
     .title {
-      font-family: "Lato", sans-serif;
       text-align: center;
       font-size: xx-large;
       width: 50rem;
