@@ -1,49 +1,76 @@
 import React from 'react'
 import './CSS/Body.scss'
-import img1 from '../img/img-1.jpg'
-import img2 from '../img/img-2.jpg'
+
 
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 
+import img1 from '../img/img-1.jpg'
+import img2 from '../img/img-2.jpg'
 
+const Style = makeStyles({
+    btn: {
+        display: "flex",
+      margin: "auto",
+      borderRadius: 0,
+      width: "25%",
+      background: "#00756c",
+      height: "4rem",
+      color: "#fff",
+      position: "relative",
+    },
+  });
 
 const Body = () => {
+    const classes = Style();
     return (
         <>
-
-        <div className="main_body">
-            <div className="body_grid">
-                <div className="body_grid_1">
-                    <div className="grid_1_heading">
-                        <h1 className="grid_1">
+            <div className="main_body">
+                <div className="box_1">
+                    <div className="box_1_heading">
+                        <h3 className="box_1_title">
                             We're open for dine-in
-                        </h1>
-                        <hr className="hr_1" />
-                        <p className="grid_1_para">We can finally be together again! Book your table and give yourself something to look forward to.</p>
-                        <img className="grid_1_img" src={img1} alt="Error" />
-                        <Button variant="contained" color="primary">
-                        Book now
-                        </Button>
+                        </h3>
                     </div>
-                </div>
-                <div className="body_grid_2">
-                    <div className="grid_2_heading">
-                        <h1 className="grid_2">
-                            Health Hub
-                        </h1>
-                        <hr className="hr_1" />
-                        <p className="grid_1_para">We can finally be together again! Book your table and give yourself something to look forward to.</p>
-                        <img className="grid_1_img" src={img2} alt="Error" />
-                        <Button variant="contained" color="primary">
-                        View more
-                        </Button>
-                    </div>
-                </div>
-            </div>
+                    <div className="box_1_hr"><hr /></div>
+                    <p className="box_1_para">
 
-        </div>
-            
+                        We can finally be together again! Book your table and give yourself something to look forward to.
+
+
+                    </p>
+                    <img src={img1} alt="Error" className="box_1_img" />
+                    <Button className={classes.btn} variant="contained" color="primary">
+                        Book now
+                    </Button>
+                    <div className="bottom"></div>
+
+
+
+                </div>
+
+                <div className="box_2">
+                    <div className="box_2_heading">
+                        <h3 className="box_2_title">
+                            Health Hub
+                        </h3>
+                    </div>
+                    <div className="box_2_hr"><hr /></div>
+                    <p className="box_2_para">
+
+
+                    We can finally be together again! Book your table and give yourself something to look forward to.
+
+
+                    </p>
+                    <img src={img2} alt="Error" className="box_2_img" />
+                    <Button className={classes.btn} variant="contained" color="primary">
+                        View more
+                    </Button>
+                <div className="bottom"></div>
+                </div>
+
+            </div>
         </>
     )
 }
