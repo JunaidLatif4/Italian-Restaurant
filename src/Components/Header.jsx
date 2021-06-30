@@ -44,27 +44,27 @@ const Header = () => {
       </div>
 
       <nav className="nav">
-        <NavLink to="/" className="navlink">
+        <NavLink to="/" className="navlink" activeClassName="navlinkactive">
           {" "}
           Home{" "}
         </NavLink>{" "}
         <div className="space">|</div>
-        <NavLink to="/" className="navlink">
+        <NavLink to="/menu" className="navlink" activeClassName="navlinkactive">
           {" "}
           Menus{" "}
         </NavLink>{" "}
         <div className="space">|</div>
-        <NavLink to="/" className="navlink">
+        <NavLink to="/timing" className="navlink" activeClassName="navlinkactive">
           {" "}
           Home{" "}
         </NavLink>{" "}
         <div className="space">|</div>
-        <NavLink to="/about" className="navlink">
+        <NavLink to="/about" className="navlink" activeClassName="navlinkactive">
           {" "}
           About Us{" "}
         </NavLink>{" "}
         <div className="space">|</div>
-        <NavLink to="/contact" className="navlink">
+        <NavLink to="/contact" className="navlink" activeClassName="navlinkactive">
           {" "}
           Contact Us{" "}
         </NavLink>

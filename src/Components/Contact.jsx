@@ -16,14 +16,14 @@ const Style = makeStyles({
   btn: {
     margin: "0.5rem 0",
     width: "20%",
-    background: "red",
+    background: "rgb(219, 107, 26)",
     height: "3rem",
     color: "#fff",
     position: "relative",
 
     float: "right",
     "&:hover": {
-      color: "red",
+      color: "black",
       transition: ".5s ease-in-out",
     },
   },
@@ -35,6 +35,7 @@ const Style = makeStyles({
     border: "1px solid #8a8686",
     height: "3rem",
     textTransform: "none",
+    fontSize:"inherit",
     // color: "#fff",
     "&:hover": {
       // color: "red",
@@ -142,7 +143,7 @@ const Contact = () => {
               <div className="Contact_button" >
                 <Button id="materialbtn1" variant="contained" className={classes.btnn}>
                   <GitHubIcon />
-                  &nbsp;&nbsp;&nbsp; Zendesk
+                  &nbsp;&nbsp;&nbsp; Mr Adrian Venoin
                 </Button>
                 <Button id="materialbtn2" variant="contained" className={classes.btnn}>
                   <WhatsAppIcon />
@@ -150,7 +151,7 @@ const Contact = () => {
                 </Button>
                 <Button id="materialbtn3" variant="contained" className={classes.btnn}>
                   <MailOutlineIcon />
-                  &nbsp;&nbsp;&nbsp;&nbsp; @instaprint.pk
+                  &nbsp;&nbsp;&nbsp;&nbsp; Clearbusiness.adrianvenoin@gmail.com
                 </Button>
               </div>
             </div>

@@ -3,7 +3,6 @@ import {Route , Switch , Redirect} from 'react-router-dom'
 
 import Header from './Components/Header'
 import Slider from './Components/Slider'
-import Map from './Components/Map'
 import Contact from './Components/Contact'
 import Footer from './Components/Footer'
 
@@ -15,7 +14,9 @@ const App = ()=>{
       <Header/>
       <Switch>
         <Route exact path="/" component={Slider}/>
-        <Route path="/about" component={Map} />
+        <Route path="/menu" component={Contact} />
+        <Route path="/timing" component={Contact} />
+        <Route path="/about" component={Contact} />
         <Route path="/contact" component={Contact} />
       </Switch>
       <Footer/>
