@@ -44,7 +44,7 @@ const Header = () => {
       </div>
 
       <nav className="nav">
-        <NavLink to="/" className="navlink" activeClassName="navlinkactive">
+        <NavLink to="/" className="navlink" exact activeClassName="navlinkactive">
           {" "}
           Home{" "}
         </NavLink>{" "}
@@ -56,7 +56,7 @@ const Header = () => {
         <div className="space">|</div>
         <NavLink to="/timing" className="navlink" activeClassName="navlinkactive">
           {" "}
-          Home{" "}
+          Timing{" "}
         </NavLink>{" "}
         <div className="space">|</div>
         <NavLink to="/about" className="navlink" activeClassName="navlinkactive">
