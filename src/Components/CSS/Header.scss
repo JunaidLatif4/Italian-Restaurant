@@ -1,24 +1,44 @@
 .header_container {
-  border-bottom: 2px solid black;
+  border: 2px solid white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  position: sticky;
+  background-color: white;
+  top: 0;
+  z-index: 5;
+  box-shadow: 0 0 2px 1px rgb(0 0 0 / 15%);
 
   .header_intro {
     border-bottom: 2px solid black;
     padding: 1rem 0;
     display: grid;
     align-items: center;
-    grid-template-columns: 0.5fr 1fr 0.5fr;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
 
     .book {
+      font-size: 1.2rem;
     }
 
     .title {
+      font-family: "Lato", sans-serif;
       text-align: center;
       font-size: xx-large;
-      width: 50rem;
+      img {
+        width: 100%;
+
+        @media only screen and (max-width: 1400px) {
+          // width: 30rem;
+        }
+        @media only screen and (max-width: 1400px) {
+          // width: 25rem;
+        }
+        @media only screen and (max-width: 1000px) {
+          // width: 22rem;
+        }
+      }
     }
   }
 
@@ -31,14 +51,21 @@
     justify-content: center;
     margin: 1rem;
 
+    @media only screen and (max-width:1400px){
+      font-size: .8rem;
+    }
+    @media only screen and (max-width:1000px){
+      font-size: .7rem;
+    }
+
     .navlink {
       padding: 0 1rem;
       text-decoration: none;
       color: black;
 
       &:hover {
-        color: #00756c;
-        text-shadow: 1px 1px 5px #00756b6b;
+        color: rgb(219, 107, 26);
+        text-shadow: 1px 1px 5px rgb(219, 107, 26);
       }
     }
     .space {

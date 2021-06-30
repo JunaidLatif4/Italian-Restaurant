@@ -17,8 +17,11 @@ import "./CSS/Slider.scss";
 const Item = ({ item }) => {
   return (
     <Paper className="slider_box">
+      <div className="headline"> 
+        <h3> Hellow again! </h3> 
+        <p> The Home Of Taste In West Drayton </p>
+      </div>
       <img src={item.img} alt="ERROR" id="img" />
-      {/* <p>{props.item.description}</p> */}
     </Paper>
   );
 };
@@ -62,11 +65,7 @@ const Slider = () => {
   return (
     <>
       <div className="slider_container">
-        <Carousel className="car"
-          indicators={false}
-          navButtonsAlwaysVisible
-          
-        >
+        <Carousel className="car" indicators={false} navButtonsAlwaysVisible>
           {items.map((item, i) => (
             <Item key={i} item={item} />
           ))}
