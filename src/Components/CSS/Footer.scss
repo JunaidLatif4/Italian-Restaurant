@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.footer_main {
+  height: 40vh;
+  background-color: black;
+  color: white;
+  padding: 45px 300px;
+  line-height: 1.5rem;
+
+  .footer_heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  .footer_bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+
+    .box_1 {
+      .bottom_heading {
+        margin-bottom: 110px;
+      }
+      .Icons {
+        font-size: 40px;
+      }
+    }
+    .box_2 {
+      .box_2_heading {
+        margin-bottom: 30px;
+      }
+      .box_2_link_1 {
+        text-decoration: none;
+        color: white;
+      }
+    }
+    .box_3 {
+      .box_3_heading {
+        margin-bottom: 30px;
+      }
+      .box_3_link_1 {
+        text-decoration: none;
+        color: white;
+        margin-bottom: 10px;
+      }
+      .box_3_link_2 {
+        text-decoration: none;
+        color: white;
+      }
+    }
+
+    .box_4 {
+      .box_4_heading {
+        margin-bottom: 30px;
+      }
+      .box_4_link_1 {
+        text-decoration: none;
+        color: white;
+        margin-bottom: 10px;
+      }
+      .box_4_link_2 {
+        text-decoration: none;
+        color: white;
+      }
+    }
+
+    .box_5 {
+      .box_5_heading {
+        margin-bottom: 30px;
+      }
+      .box_5_link_1 {
+        text-decoration: none;
+        color: white;
+        margin-bottom: 10px;
+      }
+      .box_5_link_2 {
+        text-decoration: none;
+        color: white;
+      }
+    }
+
+    .box_6 {
+      .box_6_heading {
+        margin-bottom: 30px;
+      }
+      .box_6_link_1 {
+        text-decoration: none;
+        color: white;
+        margin-bottom: 10px;
+      }
+      .box_6_link_2 {
+        text-decoration: none;
+        color: white;
+      }
+      .box_6_link_3 {
+        text-decoration: none;
+        color: white;
+      }
+      .box_6_link_4 {
+        text-decoration: none;
+        color: white;
+      }
+      .box_6_link_5 {
+        text-decoration: none;
+        color: white;
+      }
+      .box_6_link_6 {
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+}
