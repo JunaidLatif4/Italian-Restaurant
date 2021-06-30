@@ -5,6 +5,7 @@ import Header from './Components/Header'
 import Slider from './Components/Slider'
 import Contact from './Components/Contact'
 import Footer from './Components/Footer'
+import Body from './Components/Body'
 
 import './App.scss'
 
@@ -19,6 +20,7 @@ const App = ()=>{
         <Route path="/about" component={Contact} />
         <Route path="/contact" component={Contact} />
       </Switch>
+      <Body/>
       <Footer/>
     </>
   )
