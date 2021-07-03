@@ -48,6 +48,7 @@ const Body = () => {
 
 
                 </div>
+                {/* <div className="border"></div> */}
 
                 <div className="box_2">
                     <div className="box_2_heading">
