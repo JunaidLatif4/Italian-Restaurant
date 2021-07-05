@@ -6,13 +6,14 @@ import Home from './Components/Home'
 import Menu from './Components/Menu'
 import Contact from './Components/Contact'
 import Footer from './Components/Footer'
+import About from './Components/About'
 
 import './App.scss'
 
 const App = ()=>{
   return(
     <>
-      <Header/>
+      {/* <Header/>
       <Switch>
         <Route exact path="/" component={Home}/>
         <Route path="/menu" component={Menu} />
@@ -20,7 +21,8 @@ const App = ()=>{
         <Route path="/about" component={Contact} />
         <Route path="/contact" component={Contact} />
       </Switch>
-      <Footer/>
+      <Footer/> */}
+      <About/>
     </>
   )
 }

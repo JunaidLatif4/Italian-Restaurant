@@ -18,6 +18,7 @@ const Style = makeStyles({
       height: "4rem",
       color: "#fff",
       position: "relative",
+      marginTop:"20px"
     },
   });
 
@@ -48,7 +49,7 @@ const Body = () => {
 
 
                 </div>
-                {/* <div className="border"></div> */}
+                <div className="border"></div>
 
                 <div className="box_2">
                     <div className="box_2_heading">
